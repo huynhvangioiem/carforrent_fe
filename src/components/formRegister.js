@@ -59,14 +59,22 @@ function FormRegister() {
       }
       console.log(JSON.stringify(registerData));
     }
+  }
 
+  const handleReset = () =>{
+    setFullName("");
+    setEmail("");
+    setPassword("");
+    setRePassword("");
+    setPhoneNumber("");
+    setAgreeTerm("");
   }
 
   return (
     <div className="row">
       <div className="col-md-12 title">Register</div>
       <div className="col-md-12 formContent">
-        <form method="post" action="#" onSubmit={e => handleSubmit(e)}>
+        <form method="post" action="#" onReset={handleReset} onSubmit={e => handleSubmit(e)}>
           <div className="form-group">
             <label htmlFor="fullName"><FontAwesomeIcon icon="fa-solid fa-user"/>Full name</label>
             <input type="text" name="fullName" id="fullName" className="form-control" placeholder="Your full name"
