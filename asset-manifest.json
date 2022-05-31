@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/carforrent_fe/static/css/main.fb0bc32b.css",
+    "main.js": "/carforrent_fe/static/js/main.452d1ff5.js",
+    "static/js/787.dd2cb953.chunk.js": "/carforrent_fe/static/js/787.dd2cb953.chunk.js",
+    "index.html": "/carforrent_fe/index.html",
+    "main.fb0bc32b.css.map": "/carforrent_fe/static/css/main.fb0bc32b.css.map",
+    "main.452d1ff5.js.map": "/carforrent_fe/static/js/main.452d1ff5.js.map",
+    "787.dd2cb953.chunk.js.map": "/carforrent_fe/static/js/787.dd2cb953.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb0bc32b.css",
+    "static/js/main.452d1ff5.js"
+  ]
+}
