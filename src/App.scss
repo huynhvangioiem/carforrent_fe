@@ -1,0 +1,23 @@
+//Button
+.btn:not(:last-child){
+  margin-right: 10px;
+}
+
+//Form Validation
+.form-group, .form-check {
+  &.invalid{
+    transition: all linear 0.2s;
+    position: relative;
+  }
+  &.invalid .form-control {
+    border: 1px solid #f33a58;
+  }
+  &.invalid .form-message {
+    position: absolute;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1;
+    color: #f33a58 !important;
+    transition: all linear 0.2s;
+  }
+}
