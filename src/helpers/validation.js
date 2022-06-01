@@ -82,9 +82,10 @@ export const Email = (objCheck, checkValue = null, message) => {
 }
 
 export const Confirm = (objCheck, checkValue, message) => {
+  let checkElement = getInputElm(checkValue);
   let inputElement = getInputElm(objCheck);
   let errorElement = getErrorElm(inputElement);
-  if (inputElement.value !== checkValue) {
+  if (inputElement.value !== checkElement.value) {
     errorElement.innerText = message || 'Confirm does not match!';
     addClass(errorElement);
     return false;
