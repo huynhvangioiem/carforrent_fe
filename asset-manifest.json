@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/carforrent_fe/static/css/main.fb0bc32b.css",
-    "main.js": "/carforrent_fe/static/js/main.113787ac.js",
+    "main.css": "/carforrent_fe/static/css/main.a2b8f028.css",
+    "main.js": "/carforrent_fe/static/js/main.576f5735.js",
     "static/js/787.dd2cb953.chunk.js": "/carforrent_fe/static/js/787.dd2cb953.chunk.js",
+    "static/media/Loading.gif": "/carforrent_fe/static/media/Loading.5e01ee7931d3de11d2ef.gif",
     "index.html": "/carforrent_fe/index.html",
-    "main.fb0bc32b.css.map": "/carforrent_fe/static/css/main.fb0bc32b.css.map",
-    "main.113787ac.js.map": "/carforrent_fe/static/js/main.113787ac.js.map",
+    "main.a2b8f028.css.map": "/carforrent_fe/static/css/main.a2b8f028.css.map",
+    "main.576f5735.js.map": "/carforrent_fe/static/js/main.576f5735.js.map",
     "787.dd2cb953.chunk.js.map": "/carforrent_fe/static/js/787.dd2cb953.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb0bc32b.css",
-    "static/js/main.113787ac.js"
+    "static/css/main.a2b8f028.css",
+    "static/js/main.576f5735.js"
   ]
 }
