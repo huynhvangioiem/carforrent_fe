@@ -4,7 +4,7 @@ import {Button, Checkbox, Input, Label, MessageField} from "../../components/For
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {clearValidate, Validator} from "../../helpers/validation";
 import {registerValidatesData} from "../../configs/registerValidationRuleData";
-import {CheckboxField, TextField} from "../../utils/CreateFormGroup";
+import {CheckboxField, FormAction, TextField} from "../../utils/CreateFormGroup";
 
 
 function RegisterPage(props) {
@@ -137,7 +137,7 @@ function RegisterPage(props) {
                             <form method="post" action="#" onReset={handleReset} onSubmit={e => handleSubmit(e)}>
                                 <RenderFormTextField>{formFieldsData}</RenderFormTextField>
                                 <CheckboxField>{agreeTermProperty}</CheckboxField>
-                                <ShowActionForm>{formActionsData}</ShowActionForm>
+                                <FormAction>{formActionsData}</FormAction>
                             </form>
                         </div>
                     </div>
@@ -163,18 +163,6 @@ const RenderFormTextField = (props) => {
         <>
             {textFields}
         </>
-    )
-}
-
-const ShowActionForm = (props) => {
-    const actions = props.children;
-    let action = actions.map((action, index) =>
-        <Button key={index} type={action.btnType} style={action.btnStyle}>{action.btnLable}</Button>
-    )
-    return (
-        <div className="form-group action">
-            {action}
-        </div>
     )
 }
 export default RegisterPage;
