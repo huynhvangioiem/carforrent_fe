@@ -7,6 +7,8 @@ import {useGlobalData} from "./store/GlobalDataProvider";
 import {useEffect, useState} from "react";
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import {Routes, Route} from "react-router-dom";
+import {routes} from "./routes";
 
 library.add(fas);
 
@@ -21,11 +23,22 @@ function App() {
 
     return (
         <>
-            <RegisterPage/>
+            <ShowRouting>{routes}</ShowRouting>
             {isLoading && <Loading/>}
-            <ToastContainer />
+            <ToastContainer/>
         </>
     );
+}
+
+const ShowRouting = (props) => {
+    const routes = props.children;
+    let routing = routes.map((route, index) => <Route key={index} path={route.path} element={route.element}/>)
+    return (
+        <Routes>
+            {routing}
+        </Routes>
+    )
+
 }
 
 export default App;

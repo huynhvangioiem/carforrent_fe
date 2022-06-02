@@ -6,6 +6,8 @@ import {clearValidate, Validator} from "../../helpers/validation";
 import {registerValidatesData} from "../../configs/registerValidationRuleData";
 import {CheckboxField, FormAction, TextField} from "../../utils/CreateFormGroup";
 import {useGlobalData} from "../../store/GlobalDataProvider";
+import {Link} from "react-router-dom";
+import ImageLoginPage from "../../components/ImageLoginPage";
 
 
 function RegisterPage(props) {
@@ -138,6 +140,9 @@ function RegisterPage(props) {
                 <div className="col-md-6" id="formRegister">
                     <div className="row">
                         <div className="col-md-12 title">Register</div>
+                        <div className="col-md-12 subtitle">
+                            <Link to="/login">I already have account!</Link>
+                        </div>
                         <div className="col-md-12 formContent">
                             <form method="post" action="#" onReset={handleReset} onSubmit={e => handleSubmit(e)}>
                                 <RenderFormTextField>{formFieldsData}</RenderFormTextField>
@@ -148,13 +153,7 @@ function RegisterPage(props) {
                     </div>
                 </div>
                 <div className="col-md-6" id="registerImage">
-                    <div className="row">
-                        <div className="col-md-12 image">
-                            <img
-                                src="https://www.cinch.co.uk/static/33916de99a6cf53e7a430f9f862a3296/99791/home-hero.png"
-                                className="img-fluid" alt=""/>
-                        </div>
-                    </div>
+                    <ImageLoginPage/>
                 </div>
             </div>
         </div>
