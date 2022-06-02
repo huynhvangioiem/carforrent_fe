@@ -5,11 +5,14 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {clearValidate, Validator} from "../../helpers/validation";
 import {registerValidatesData} from "../../configs/registerValidationRuleData";
 import {CheckboxField, FormAction, TextField} from "../../utils/CreateFormGroup";
+import {useGlobalData} from "../../store/GlobalDataProvider";
 
 
 function RegisterPage(props) {
 
-    //Initial State
+    //Initial State and ...
+    const {register} = useGlobalData();
+
     const [fullName, setFullName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -112,9 +115,11 @@ function RegisterPage(props) {
                 "email": email,
                 "password": password,
                 "phoneNumber": phoneNumber,
-                "agreeTerm": agreeTerm
+                // "agreeTerm": agreeTerm
             }
-            console.log(JSON.stringify(registerData));
+            if (register(registerData)) {
+                handleReset();
+            }
         }
     }
 
