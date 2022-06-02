@@ -1,9 +1,11 @@
 import React from 'react';
-
+/*
+*
+* */
 function Label(props) {
-  return (
-    <label htmlFor={props.name}>{props.icon}{props.label}</label>
-  );
+    return (
+        <label htmlFor={props.for}>{props.children}</label>
+);
 }
 
 export default Label;
