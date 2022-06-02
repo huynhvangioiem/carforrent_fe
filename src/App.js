@@ -1,6 +1,7 @@
 import RegisterPage from "./Containers/RegisterPage";
 import {library} from '@fortawesome/fontawesome-svg-core'
 import {fas} from '@fortawesome/free-solid-svg-icons'
+import {fab} from  '@fortawesome/free-brands-svg-icons'
 import "./App.scss";
 import Loading from "./components/Loading";
 import {useGlobalData} from "./store/GlobalDataProvider";
@@ -10,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import {Routes, Route} from "react-router-dom";
 import {routes} from "./routes";
 
-library.add(fas);
+library.add(fas,fab);
 
 function App() {
 

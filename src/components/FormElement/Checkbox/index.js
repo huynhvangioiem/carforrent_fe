@@ -1,17 +1,21 @@
 import React from 'react';
 
 function Checkbox(props) {
+  const property = {
+    type: "checkbox",
+    className: "form-check-input" + (props.customClass || ""),
+    id: props.nameField || "",
+    name: props.nameField || "",
+    checked: props.checked || false,
+
+    ...(props.onChange && {onChange: e => props.onChange(e.target.checked)}),
+    ...(props.onInput && {onInput: e => props.onInput("#" + props.nameField)}),
+    ...(props.onBlur && {onBlur: e => props.onBlur([props.validateData])}),
+  }
   return (
-    <input
-      type="checkbox"
-      className="form-check-input"
-      name={props.name}
-      id={props.id}
-      checked={props.checked}
-      onChange={e => props.onChange(e.target.checked)}
-      onInput={e => props.onInput("#" + props.id)}
-      onBlur={e => props.onBlur([props.validateData])}
-    />
+    <>
+      <input{...property}/>
+    </>
   );
 }
 

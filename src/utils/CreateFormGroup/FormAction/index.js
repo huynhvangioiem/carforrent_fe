@@ -1,4 +1,5 @@
 import {Button} from "../../../components/FormElement";
+import clsx from "clsx";
 
 export default function FormAction(props) {
     const actions = props.children;
@@ -7,5 +8,5 @@ export default function FormAction(props) {
             {action.btnLable}
         </Button>
     )
-    return (<div className="form-group action">{action}</div>)
+    return (<div className={clsx("form-group action",props.customClass)}>{action}</div>)
 }

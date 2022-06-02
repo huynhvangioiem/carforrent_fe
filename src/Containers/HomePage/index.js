@@ -5,7 +5,7 @@ function HomePage(props) {
     return (
         <div>
             This is home page
-            <Link to="/login">Login Page</Link>
+            <Link to="/register">Register Page</Link>
         </div>
     );
 }

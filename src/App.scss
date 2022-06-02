@@ -10,6 +10,14 @@ a{
 .btn:not(:last-child){
   margin-right: 10px;
 }
+.btn-social{
+  width: 40px !important;
+  height: 40px;
+  border-radius: 50%;
+  svg{
+    margin: auto !important;
+  }
+}
 
 //Form Validation
 .form-group, .form-check {
