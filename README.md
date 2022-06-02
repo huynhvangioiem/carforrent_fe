@@ -1,10 +1,10 @@
-#Fake API
-This project use MockAPI (https://62975c7514e756fe3b2e3189.mockapi.io/api/user) for register
-This project use TestAPI (https://testapi.io/api/huynhvangioiem/login) for login and receive token
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Fake API
+This project use MockAPI (https://62975c7514e756fe3b2e3189.mockapi.io/api/user) for register
+This project use TestAPI (https://testapi.io/api/huynhvangioiem/login) for login and receive token
 
 ## Available Scripts
 
