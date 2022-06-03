@@ -9,12 +9,13 @@ import {loginValidationRuleData} from "../../configs/loginValidationRuleData";
 import {Link, useNavigate} from "react-router-dom";
 import {statusCode} from "../../constants/API";
 import {toast} from "react-toastify";
+import {setLocalStorage} from "../../service/localStorageService";
 
 function LoginPage(props) {
 
 
     //Initial State and ...
-    const {handleLogin, setLoadingState} = useGlobalData();
+    const {handleLogin, setLoadingState, setUserProfile} = useGlobalData();
     const navigate = useNavigate();
 
     const [email, setEmail] = useState("");
@@ -95,6 +96,8 @@ function LoginPage(props) {
         setTimeout(() => {
             setLoadingState(false);
             if (response.status === statusCode.success) {
+                setLocalStorage("userProfile",response.data);
+                setUserProfile(response.data);
                 handleReset();
                 toast.success("Login success!");
                 navigate('/')

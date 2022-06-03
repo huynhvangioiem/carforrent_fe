@@ -1,0 +1,23 @@
+body {
+  .container#notFoundPage {
+    position: relative;
+    height: 100vh;
+
+    .background {
+      position: absolute;
+      top: 40%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      text-align: center;
+
+      img {
+        margin-bottom: 15px;
+      }
+
+      a {
+        font-size: 30px;
+      }
+    }
+  }
+}

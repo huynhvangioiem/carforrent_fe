@@ -7,6 +7,7 @@ const GlobalDataContext = createContext();
 function GlobalDataProvider(props) {
   const [loadingState, setLoadingState] = useState(false);
   const [users, setUsers] = useState([]);
+  const [userProfile, setUserProfile] = useState("");
 
 
   const register = async (userData) => {
@@ -22,6 +23,8 @@ function GlobalDataProvider(props) {
   const providerValues = {
     loadingState,
     setLoadingState,
+    setUserProfile,
+    userProfile,
     register,
     handleLogin
   }
