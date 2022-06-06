@@ -1,0 +1,17 @@
+body{
+  .container{
+    .title{
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .action{
+      text-align: right;
+      padding-top: 15px;
+    }
+  }
+  .modal{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

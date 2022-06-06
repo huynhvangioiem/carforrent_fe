@@ -1,32 +1,21 @@
 import React, {createContext, useContext, useState} from 'react';
-import {addUser} from "../../api/users";
-import {login} from "../../api/auth";
+import {getLocalStorage} from "../../service/localStorageService";
 
 const GlobalDataContext = createContext();
 
 function GlobalDataProvider(props) {
+  const [userProfile, setUserProfile] = useState(getLocalStorage("userProfile"));
+
   const [loadingState, setLoadingState] = useState(false);
-  const [users, setUsers] = useState([]);
-  const [userProfile, setUserProfile] = useState("");
-
-
-  const register = async (userData) => {
-    setLoadingState(true);
-    return  await addUser(userData);
-  }
-
-  const handleLogin = async (loginData) => {
-    setLoadingState(true);
-    return  await login(loginData);
-  }
+  const [cars, setCars] = useState([]);
 
   const providerValues = {
     loadingState,
     setLoadingState,
     setUserProfile,
     userProfile,
-    register,
-    handleLogin
+    cars,
+    setCars
   }
   return (
     <GlobalDataContext.Provider value={providerValues}>
