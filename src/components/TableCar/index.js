@@ -4,10 +4,10 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 function TableCar(props) {
 
-  const { detail, del } = props;
+  const { edit, del } = props;
 
-  const handleDetail = (id) => {
-    detail(id);
+  const handleEdit = (id) => {
+    edit(id);
   }
   const handleDelete = (id) => {
     del(id);
@@ -45,7 +45,7 @@ function TableCar(props) {
       title: "Tùy Chọn",
       Content: (id) => (
         <>
-          <button type="button" onClick={e => handleDetail(id)} className="btn btn-info"><FontAwesomeIcon icon="fa-solid fa-info" /></button>
+          <button type="button" onClick={e => handleEdit(id)} className="btn btn-info"><FontAwesomeIcon icon="fa-solid fa-pen" /></button>
           <button type="button" onClick={e => handleDelete(id)} className="btn btn-danger"><FontAwesomeIcon icon="fa-solid fa-trash-can" /></button>
         </>
       ),
@@ -54,7 +54,7 @@ function TableCar(props) {
     },
   ]
   return (
-    <DataTables dataTables={data} columns={columns} idKey=""/>
+    <DataTables dataTables={data} columns={columns} idKey="id"/>
   );
 }
 

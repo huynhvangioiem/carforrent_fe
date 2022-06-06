@@ -30,6 +30,7 @@ const service = axios.create({
 service.interceptors.response.use(handleSuccess, handleError);
 
 
+
 export const getApi = (endpoint) => {
     return service.get(endpoint);
 }
@@ -40,5 +41,23 @@ export const postApi = (endpoint, payload) => {
         url: endpoint,
         responseType: 'json',
         data: payload
+    });
+}
+
+export const putApi = (endpoint, payload) =>{
+    return service.request({
+        method: 'PUT',
+        url: endpoint,
+        responseType: 'json',
+        data: payload
+    });
+}
+
+export const deleteApi = (endpoint) =>{
+    return service.request({
+        method: 'DELETE',
+        url: endpoint,
+        responseType: 'json',
+        data: null
     });
 }

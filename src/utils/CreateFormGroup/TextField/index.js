@@ -15,6 +15,7 @@ export default function TextField(props) {
                 onInput={property.onInput}
                 onBlur={property.onBlur}
                 validateData={property.validateData}
+
             />
             <MessageField/>
         </div>

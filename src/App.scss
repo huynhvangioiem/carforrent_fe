@@ -36,6 +36,13 @@ a{
   }
 }
 
+//Form
+.form-group{
+  svg{
+    margin-right: 10px;
+  }
+}
+
 //Form Validation
 .form-group, .form-check {
   &.invalid{
