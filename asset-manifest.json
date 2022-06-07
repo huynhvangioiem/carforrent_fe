@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.8919cc18.css",
-    "main.js": "/static/js/main.d9fc6ac7.js",
-    "static/js/787.dd2cb953.chunk.js": "/static/js/787.dd2cb953.chunk.js",
-    "static/media/Loading.gif": "/static/media/Loading.5e01ee7931d3de11d2ef.gif",
-    "static/media/404-page-not-found-768x416.png": "/static/media/404-page-not-found-768x416.1f18292646521f5c2fe0.png",
-    "index.html": "/index.html",
-    "main.8919cc18.css.map": "/static/css/main.8919cc18.css.map",
-    "main.d9fc6ac7.js.map": "/static/js/main.d9fc6ac7.js.map",
-    "787.dd2cb953.chunk.js.map": "/static/js/787.dd2cb953.chunk.js.map"
+    "main.css": "/carforrent_fe/static/css/main.8919cc18.css",
+    "main.js": "/carforrent_fe/static/js/main.50b22c5c.js",
+    "static/js/787.0ca76d98.chunk.js": "/carforrent_fe/static/js/787.0ca76d98.chunk.js",
+    "static/media/Loading.gif": "/carforrent_fe/static/media/Loading.5e01ee7931d3de11d2ef.gif",
+    "static/media/404-page-not-found-768x416.png": "/carforrent_fe/static/media/404-page-not-found-768x416.1f18292646521f5c2fe0.png",
+    "index.html": "/carforrent_fe/index.html",
+    "main.8919cc18.css.map": "/carforrent_fe/static/css/main.8919cc18.css.map",
+    "main.50b22c5c.js.map": "/carforrent_fe/static/js/main.50b22c5c.js.map",
+    "787.0ca76d98.chunk.js.map": "/carforrent_fe/static/js/787.0ca76d98.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8919cc18.css",
-    "static/js/main.d9fc6ac7.js"
+    "static/js/main.50b22c5c.js"
   ]
 }
